@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px){
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -18,8 +18,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    align-items: flex-start;
-    
+    align-items: baseline; 
   }
 }
 
@@ -33,6 +32,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
     text-align: left;
   }
 }
@@ -40,9 +40,7 @@
 
 .addres__box {
   @media screen and (min-width: 1200px) {
-    &:not(:last-child) {
       margin-right: 70px;
-    }
   }
 }
 

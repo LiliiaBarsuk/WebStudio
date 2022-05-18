@@ -6,10 +6,10 @@
 }
 
 .clients__link {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
   height: 92px;
 
   border: 1px solid #AFB1B8;
@@ -24,17 +24,13 @@
     border: 1px solid $accentColor;
   }
   
-  @media screen and (min-width: 768px) and (max-width:1199px) {
-    width: 226px;
-  }
 
-  @media screen and (min-width: 1200px) {
-    width: 170px;
-  }
 }
 
 .clients__item {
+  width: calc(100% / 2 - 30px);
   @media screen and (max-width: 767px){
+
     margin-right: 30px;
     margin-bottom: 30px;
 
@@ -48,6 +44,7 @@
   }
   
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc(100% / 3 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
 
@@ -61,6 +58,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    width: calc(100% / 6 - 30px);
     &:not(:last-child) {
       margin-right: 30px;
     }
