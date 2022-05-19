@@ -354,10 +354,6 @@ p {
   margin-left: auto;
 }
 
-.contacts__list {
-  padding: 21px 0;
-}
-
 @media screen and (min-width: 1200px) {
   .contacts__list {
     display: -webkit-box;
@@ -376,6 +372,7 @@ p {
 @media screen and (min-width: 1200px) {
   .contacts__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -748,7 +745,7 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
-    width: calc(100% / 2 - 30px);
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -762,7 +759,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: calc(100% / 4 - 30px);
+    width: calc((100% - 90px) / 4);
   }
   .team__item:not(:last-child) {
     margin-right: 30px;
@@ -881,7 +878,7 @@ p {
 }
 
 .clients__item {
-  width: calc(100% / 2 - 30px);
+  width: calc((100% - 30px) / 2);
 }
 
 @media screen and (max-width: 767px) {
@@ -899,7 +896,7 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
-    width: calc(100% / 3 - 30px);
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -913,7 +910,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: calc(100% / 6 - 30px);
+    width: calc((100% - 150px) / 6);
   }
   .clients__item:not(:last-child) {
     margin-right: 30px;
@@ -1041,8 +1038,10 @@ p {
   color: #fff;
 }
 
-.subscription__box {
-  width: 100%;
+@media screen and (max-width: 479px) {
+  .subscription__box {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1494,7 +1493,7 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .grid__item {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
   }
   .grid__item:nth-child(2n) {

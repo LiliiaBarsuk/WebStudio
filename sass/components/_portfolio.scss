@@ -85,7 +85,7 @@
   }
   
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
     
     &:nth-child(2n) {

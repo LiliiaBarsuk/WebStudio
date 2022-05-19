@@ -28,7 +28,8 @@
 }
 
 .clients__item {
-  width: calc(100% / 2 - 30px);
+  width: calc((100% - 30px) / 2);
+  
   @media screen and (max-width: 767px){
 
     margin-right: 30px;
@@ -44,7 +45,7 @@
   }
   
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: calc(100% / 3 - 30px);
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
 
@@ -58,7 +59,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc(100% / 6 - 30px);
+    width: calc((100% - 150px) / 6);
     &:not(:last-child) {
       margin-right: 30px;
     }

@@ -13,8 +13,6 @@
   margin-left: auto;
 }
 .contacts__list {
-  padding: 21px 0;
-
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: flex-start;
@@ -29,6 +27,7 @@
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       margin-right: 30px;
+      margin-bottom: 0;
     }  
   }
 }

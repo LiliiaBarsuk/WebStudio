@@ -1,14 +1,18 @@
 .subscription__box {
-  width: 100%;
+  @media screen and (max-width: 479px) {
+      width: 100%;
+    }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
 }
 
 .subscription__form {
+
   @media screen and (min-width: 1200px) {
    display: flex;
    flex-direction: row;
+   
   }
 }
 
